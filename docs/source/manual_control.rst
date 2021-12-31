@@ -1,7 +1,16 @@
 Manual Control
 =====================
 
-**Step 1:** Run the ``Rollarm.ino`` code under the path ``DIY Control Robot Arm kit for Arduino-Rollarm\\Arduino Code\\Rollarm``. There are four code files in Rollarm, ``Rollarm.ino`` is the main program, when the others are subprograms.
+**Step 1**
+
+First rotate the 4 potentiometers of the Rollarm to the forward facing position, in order to keep the Rollarm as it was just assembled after uploading the code below.
+
+.. image:: img/rollarm_start.jpg
+    :width: 800
+
+**Step 2**
+
+Run the ``Rollarm.ino`` code under the path ``DIY Control Robot Arm kit for Arduino-Rollarm\\Arduino Code\\Rollarm``. There are four code files in Rollarm, ``Rollarm.ino`` is the main program, when the others are subprograms.
 
 .. image:: img/media58.png
 
@@ -9,9 +18,13 @@ When you open the main program, the subprograms will be opened automatically：
 
 .. image:: img/media59.png
 
-**Step 2:** Select the corresponding board and port, then click **Upload**.
+**Step 3**
 
-**Step 3:** After the code upload, turn the power switch on, then we can try to control the Rollarm.
+Select the corresponding board and port, then click **Upload**.
+
+**Step 4**
+
+After the code upload, turn the power switch on, then we can try to control the Rollarm.
 
 * **White** potentiometer to control the **Servo D** 
 * The **yellow** potentiometer to control **Servo C** 
@@ -19,6 +32,8 @@ When you open the main program, the subprograms will be opened automatically：
 * The **red** potentiometer to control **Servo A**
 
 .. image:: img/media60.png
+
+
 
 Record behavior
 ----------------------

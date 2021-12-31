@@ -26,14 +26,15 @@ Upload the Code
 
 Before using the Rollarm Labview software, upload the control codes into the Rollarm robot, and the steps are as follows.
 
-**Step 1**: In order to avoid the incompatibility, please use Arduino IDE 1.0.5, which you can download from us.
+**Step 1**: In order to avoid the incompatibility, please use Arduino IDE 1.0.5.
 
+* :download:`Arduino IDE 1.0.5 <https://github.com/sunfounder/DIY_Control_Robot_Arm_kit_for_Arduino-Rollarm/raw/master/arduino-1.0.5-r2.zip>`
 
 **Step 2**: After downloading and unzipping, double click the ``arduino.exe`` to open it.
 
 .. image:: img/media69.png
 
-**Step 3**: Click **File** -> **Open**, go to the path where you downloaded the code, and open ``LIFA_Base.ino`` under the path of ``DIY_Control_Robot_Arm_kit_for_Arduino-Rollarm.1\\\Arduino Code\LIFA_Base``.
+**Step 3**: Click **File** -> **Open**, go to the path where you downloaded the code, and open ``LIFA_Base.ino`` under the path of ``DIY_Control_Robot_Arm_kit_for_Arduino-Rollarm.1\\Arduino Code\LIFA_Base``.
 
 .. image:: img/media166.png
 
