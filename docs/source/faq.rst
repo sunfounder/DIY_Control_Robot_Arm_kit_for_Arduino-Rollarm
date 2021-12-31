@@ -6,7 +6,7 @@ About the Assembly
 
 **Q1:** After assembly and program download, the Rollarm’s four axes are in wired position, some maybe out of control. What should I do? 
 
-**A:** Remember to power on and calibrate each servo before assembly.
+**A:** Remember to power on and calibrate each Servo before assembly.
 
 About the Arduino code control
 ----------------------------------
@@ -32,7 +32,7 @@ If a new folder has been created for the subprogram, please cut the subprogram f
 About the Labview software control
 -------------------------------------
 
-**Q1:** After powering on the Rollarm, why do the servos shake a little when there’s no movement at all?
+**Q1:** After powering on the Rollarm, why do the Servos shake a little when there’s no movement at all?
 
 **A:** There may be something wrong with the Serial Port. For instance, the following condition may appear:
 

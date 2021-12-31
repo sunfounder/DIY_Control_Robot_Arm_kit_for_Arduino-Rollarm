@@ -1,7 +1,7 @@
 Manual Control
-----------------
+=====================
 
-**Step 1:** Run the **Rollarm.ino** code under the path **DIY Control Robot Arm kit for Arduino-Rollarm\\Arduino Code\\sRollarm**. There are four code files in Rollarm, **Rollarm.ino** is the main program, when the others are subprograms.
+**Step 1:** Run the ``Rollarm.ino`` code under the path ``DIY Control Robot Arm kit for Arduino-Rollarm\\Arduino Code\\Rollarm``. There are four code files in Rollarm, ``Rollarm.ino`` is the main program, when the others are subprograms.
 
 .. image:: img/media58.png
 
@@ -13,37 +13,36 @@ When you open the main program, the subprograms will be opened automatically：
 
 **Step 3:** After the code upload, turn the power switch on, then we can try to control the Rollarm.
 
-**Step 4:** Rotate the four potentiometer buttons to try the controlled servo and direction:
-
-White potentiometer to control the Servo D, the yellow to control Servo C, the orange to control Servo B, and the red one to control Servo A.
+* **White** potentiometer to control the **Servo D** 
+* The **yellow** potentiometer to control **Servo C** 
+* The **orange** potentiometer to control **Servo B** 
+* The **red** potentiometer to control **Servo A**
 
 .. image:: img/media60.png
 
 Record behavior
-~~~~~~~~~~~~~~~~~~~
+----------------------
 
-With the handle, the Rollarm can record its behaviors:
+Also ``Rollarm.ino`` has the function of recording actions, now look at how to use this function.
 
-**Rotate one potentiometer** to control one servo to the desired position, and **press the yellow button shortly** to let the control board record this step. Record the rest steps in this way.
+* Rotate a potentiometer to control a Servo to the desired position.
+* Record this step by pressing the **yellow button** shortly.
+* You can record as many steps as you like, up to a maximum of 100.
+* Now press and hold the **yellow button** to get Rollarm to resume the recorded steps.
 
-When all the steps are done, **press the yellow button for a while (3s)**, it will repeat the recorded steps (Rollarm can record at most 100 steps because of the control board’s memory limit.)
 
 .. image:: img/media61.png
 
-Thus we can make it automatically carry blocks continuously:
+
 
 Code Explanation
-~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-The program includes three parts: rotating the potentiometers to control the Rollarm, pressing the button slightly for less than one second to record Rollarm’s behaviors and pressing the button for a relatively longer time to make Rollarm repeat the recorded steps.
-
-There are four potentiometers to control the arms. The 4 servos from top to bottom are connected to port 4-7 respectively of the expansion board, and the 4 potentiometers control the ports accordingly. In other words, spin the white potentiometer to control the uppermost servo, the yellow to control the next servo below, the orange to control the next servo, and the red one to control the bottom servo. 
-
-Since the Rollarm has four servos acting as the moving joint, we need to include a header file for driving the servos and define them. 
+Since the Rollarm has four Servos acting as the moving joint, we need to include a header file for driving the Servos and define them. 
 
 .. code-block:: c
 
-	//Create servo object to control a servo.
+	//Create Servo object to control a Servo.
 	#include <Servo.h>
 	
 	Servo Servo_0;
@@ -51,7 +50,7 @@ Since the Rollarm has four servos acting as the moving joint, we need to include
 	Servo Servo_2;
 	Servo Servo_3;
 	
-After defining the function of driving the servos, we need to read the AD value of the potentiometers and convert it into the rotating angle of the servo since the servos are controlled by rotating the potentiometers.
+After defining the function of driving the Servos, we need to read the analog value of the potentiometers and convert them into the rotating angle of the Servos.
 
 .. code-block:: c
 
@@ -137,7 +136,7 @@ We can tell which part of the code the Rollarm is performing by reading the valu
 		ReadPot();
 		Mapping0();
 		
-Next, we are going to call the function to write the value of the servo rotating angle. However, it is not merely about writing the values directly; the difference between two adjacent rotating values will also be written into the servos. Here we take a servo program for example.
+Next, we are going to call the function to write the value of the Servo rotating angle. However, it is not merely about writing the values directly; the difference between two adjacent rotating values will also be written into the Servos. Here we take a Servo program for example.
 
 .. code-block:: c
 

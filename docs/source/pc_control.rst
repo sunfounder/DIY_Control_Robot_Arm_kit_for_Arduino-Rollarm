@@ -1,21 +1,19 @@
 PC Control
--------------
+========================
 
 Install Labview Software
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
-For this kit, we use the Labview software for control on PC. If you have other better options, welcome to share by post under **Community** -> **FORUM** on our website www.sunfounder.com.
+For this kit, we use the Labview software for control on PC, download the Labview package in the link below:
 
-Download the Labview package in the link below:
+* :download:`Labview <https://s3.amazonaws.com/sunfounder/Arduino/Labview.zip>`
 
-https://s3.amazonaws.com/sunfounder/Arduino/Labview.zip
-
-After downloading, open it and you will see the folder Rollarm’s Installer. Then find the setup file as shown below:
+Once downloaded, unzip it and double-click the ``setup.exe`` file to install it.
 
 .. image:: img/media63.png
 
-After the installation is done, in Start Menu, find Rollarm to open the Rollarm software. Or, enter the installation directory we used just now, and double click Rollarm.exe to open it. 
-The defaulted installation directory is: C:\\Program Files (x86)\\Rollarm.
+After the installation is done, search for **Rollarm** at the bottom left of your computer to open this software. Or, enter the installation directory we used just now, and double click ``Rollarm.exe`` to open it. 
+The defaulted installation directory is: ``C:\\Program Files (x86)\\Rollarm``.
 
 .. image:: img/media64.png
 
@@ -24,40 +22,31 @@ The following interface will show up.
 .. image:: img/media65.png
 
 Upload the Code
-~~~~~~~~~~~~~~~~~~~
+------------------------
 
-Before using the Rollarm Labview software, flash the control codes into the Rollarm robot, and the steps are as follows.
+Before using the Rollarm Labview software, upload the control codes into the Rollarm robot, and the steps are as follows.
 
-**Step 1:** In order to avoid the incompatibility, please download Arduino IDE 1.0.5 on Arduino official website: 
+**Step 1**: In order to avoid the incompatibility, please use Arduino IDE 1.0.5, which you can download from us.
 
-https://www.arduino.cc/en/Main/OldSoftwareReleases#previous
 
-You are suggested to download zip version because zip version does not need installation and you can use it directly.
-
-.. image:: img/media66.png
-
-**Step 2:** After downloading and unzipping them, you need to double click the arduino.exe to open it.
-
-.. image:: img/media67.png
-
-**Step 3:** Click File- >Open, and you can find the LIFA_Base.ino on the path
-
-DIY_Control_Robot_Arm_kit_for_Arduino-Rollarm.1\\Arduino Code\\LIFA_Base
-
-And click to open.
-
-.. image:: img/media68.png
-
-**Step 4:** Choose the proper Board and Port, and upload the codes to the control board.
+**Step 2**: After downloading and unzipping, double click the ``arduino.exe`` to open it.
 
 .. image:: img/media69.png
 
-DO NOT unplug the USB cable at the moment.
+**Step 3**: Click **File** -> **Open**, go to the path where you downloaded the code, and open ``LIFA_Base.ino`` under the path of ``DIY_Control_Robot_Arm_kit_for_Arduino-Rollarm.1\\\Arduino Code\LIFA_Base``.
+
+.. image:: img/media166.png
+
+**Step 4:** Choose the proper Board and Port, and upload the code to the SunFounder R3 board. DO NOT unplug the USB cable at the moment.
+
+.. image:: img/media68.png
+
+
 
 Using the Software
-~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-Back to the Rollarm Labview software, which includes two parts: **Manual** Mode and **Automatic** Mode.
+Back to the Rollarm Labview software, which includes two modes: **Manual Mode** and **Automatic Mode**.
 
 **Manual Mode**
 
@@ -68,15 +57,15 @@ Back to the Rollarm Labview software, which includes two parts: **Manual** Mode 
 **Step2:** Click the inverted triangle icon for Serial Port, select the port according to you COM port. Here is COM24, which varies for different computers.
 
 .. note::
-    If you can only see COM1,to solve the problem, just replug the USB cable. Then start from sketch upload again.
-	
+    If you can only see COM1, to solve the problem, just replug the USB cable.
+
 .. image:: img/media71.png
 
 **Step 3:** Select the **Board Type (Uno)** and **Connection Type(USB/Serial)**.
 
 .. image:: img/media72.png
 
-**Step 4:** There are **three** small icons at the top left. Click the middle on to run the software.
+**Step 4:** There are **three** small icons at the top left, click the middle on to run the software.
 
 .. image:: img/media73.png
 
@@ -89,7 +78,7 @@ Back to the Rollarm Labview software, which includes two parts: **Manual** Mode 
 	
 .. image:: img/media75.png
 
-**Step 6: M1-M4 correspond to Servo1-Servo4**, you can move the slider control the 4 servo on the Rollarm.
+**Step 6: M1-M4 correspond to Servo1-Servo4**, you can move the slider to control the 4 Servos on the Rollarm.
 
 .. image:: img/media76.png
 
@@ -97,18 +86,15 @@ Back to the Rollarm Labview software, which includes two parts: **Manual** Mode 
 
 **Automatic Mode**
 
-You can also switch to **Auto Mode**. Fill the value of the rotating angle of the servos into the table under **Auto Mode** one by one. After filling the figures, click the **Start** button, then Rollarm will then perform as you just set.
+You can also switch to **Auto Mode**. Fill the angle of the Servos into the table under **Auto Mode** one by one. After filling the figures, click the **Start** button, then Rollarm will then perform as you just set.
 
-**M1-M4:** Servo1-Servo4.
-
-**1-9:** 9 groups of rotating angle.
-
-**Interval times(ms):** The interval times between two groups, such as interval times between M4 in row 1 and M1 in row 2.
-
-**Interval times(ms) 2:** The interval time between two rotating angles within a group.
+* **M1-M4**: Servo1-Servo4.
+* **1-9**: 9 groups of rotating angle.
+* **Interval times(ms)**: The interval times between two groups, such as interval times between M4 in row 1 and M1 in row 2.
+* **Interval times(ms) 2**: The interval time between two rotating angles within a group.
 
 .. note::
-    the range of the data for Mode 4 is 90~180. Otherwise, it will be damaged due to stalling.
+    The range of the data for Mode 4 is 90~180. Otherwise, it will be damaged due to stalling.
 
 .. image:: img/media78.png
 
