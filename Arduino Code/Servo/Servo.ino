@@ -15,45 +15,32 @@ Servo Servo_0;
 Servo Servo_1;
 Servo Servo_2;
 Servo Servo_3;
-Servo Servo_4;
 
 /*
   - setup function
   ---------------------------------------------------------------------------*/
-void setup()
+void setup() 
 {
   //Start the serial.
   Serial.begin(9600);
-
+  
   //Attach the servos on pins to the servo object
   Servo_0.attach(4);
   Servo_1.attach(5);
   Servo_2.attach(6);
   Servo_3.attach(7);
-  Servo_4.attach(8);
+
 }
 
 /*
-  - loop function nj
+  - loop function
    ---------------------------------------------------------------------------*/
-void loop()
+void loop() 
 {
   //Set the initial positions of steering gears
-  for (int i=0; i < 200; i++) {
-    Servo_0.write(i);
-    Servo_1.write(i);
-    Servo_2.write(i);
-    Servo_3.write(i);
-    Servo_4.write(i);
-    delay(15);
-  }
-  for (int i=200; i > 0; i--) {
-    Servo_0.write(i);
-    Servo_1.write(i);
-    Servo_2.write(i);
-    Servo_3.write(i);
-    Servo_4.write(i);
-    delay(15);
-  }
-  
+  Servo_0.write(90);
+  Servo_1.write(90);
+  Servo_2.write(90);
+  Servo_3.write(170);
+  while(1);
 }
