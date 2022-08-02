@@ -6,7 +6,8 @@ Rollarm can be controlled from your computer using a desktop application generat
 Using this app, you can control Rollarm to different postures and see the corresponding angle of each servo.
 
 
-**1. Add the Libraries**
+1. Add the Libraries
+------------------------
 
 Here we need to add LINX related libraries to ``Arduino/libraries``. 
 LabVIEW LINX is an add-on to LabVIEW that adds the tools for development with Raspberry Pi, BeagleBoard and Arduino.
@@ -24,7 +25,8 @@ The Arduino IDE uses this path by default to store user-added libraries. If your
 
     .. image:: img/linx7.png
 
-**2. Run the Code**
+2. Run the Code
+------------------------------
 
 Open the ``.ino`` file in the ``DIY_Control_Robot_Arm_kit_for_Arduino-Rollarm\Arduino Code\Arduino_Uno_Serial`` path.
 
@@ -32,7 +34,8 @@ After selecting the correct board and port, upload it to the Arduino board.
 
     .. image:: img/linx8.png
 
-**3. Install the APP**
+3. Install the APP
+-------------------------
 
 Download the installation package.
 
@@ -57,7 +60,8 @@ The following interface will show up.
 
     .. image:: img/linux1.png
 
-**4. Use the APP**
+4. Use the APP
+-----------------------
 
 Choose COM port, the same one you picked in the Arduino IDE.
 
