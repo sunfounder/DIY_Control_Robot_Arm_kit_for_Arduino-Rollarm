@@ -17,6 +17,10 @@ This fun mechanical arm consists of 4 axes, each controlled by a servo. Powered 
 
 <a id="update"></a>
 ## Update:
+
+2022-08-02:
+ - Change the labVIEW add-on to LINX
+
 2019-08-1:
  - New Release
 
