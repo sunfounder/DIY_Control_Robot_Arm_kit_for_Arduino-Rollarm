@@ -27,22 +27,3 @@ If you open the subprograms separately, a window will pop up like this:
 If a new folder has been created for the subprogram, please cut the subprogram file to the original directory ``Arduino code\\Rollarm``. Reopen the main program:
 
 .. image:: img/media81.png
-
-
-
-About the Labview Software Control
--------------------------------------
-
-**Q1:** Why does the Servos shake a little after turning on the power of Rollarm?
-
-**Answer:** There may be a problem with the serial port. For example, the following situation may occur.
-
-.. image:: img/media83.png
-
-Turn off Rollarm, power up again and reconnect the serial port and retry.
-
-**Q1:** When I click **Start**, Rollarm is in a strange position, it is in auto mode. Is there something wrong?
-
-.. image:: img/media84.png
-
-Before clicking **Start**, you need to fill in the rotation angles for each axis in the different steps, and the interval between steps. If you don't know the exact angle, you can go to manual mode, record the angle value for each step, and then turn back to fill it in.When all the above steps are completed, you can click **Start** to have Rollarm perform these steps.
