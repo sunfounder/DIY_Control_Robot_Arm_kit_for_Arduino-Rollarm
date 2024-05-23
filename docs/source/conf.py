@@ -87,3 +87,13 @@ language = 'en' # Before running make html, set the language.
 locale_dirs = ['locale/'] # .po files for other languages are placed in the locale/ folder.
 
 gettext_compact = False # Support for generating the contents of the folders inside source/ into other languages.
+
+# open link in a new window
+
+rst_epilog = """
+
+.. |link_sf_facebook| raw:: html
+
+    <a href="https://bit.ly/3UJ3BEc" target="_blank">here</a>
+
+"""
