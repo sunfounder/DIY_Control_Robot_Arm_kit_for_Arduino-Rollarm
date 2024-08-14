@@ -12,8 +12,10 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-Rollarm for Arduino
+|link_Rollarm| for Arduino
 ============================
+
+* |link_Rollarm_kit|
 
 The Rollarm Kit is an interesting and useful learning tool for Arduino and robot hobbyists. With the structural plate and code based on Arduino, it enables users to learn programming from easy to difficult, control the mechanical arm freely and perform various fun operations! 
 

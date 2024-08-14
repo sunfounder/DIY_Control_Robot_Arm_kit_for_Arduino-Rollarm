@@ -96,4 +96,12 @@ rst_epilog = """
 
     <a href="https://bit.ly/raphaelkit" target="_blank">here</a>
 
+.. |link_Rollarm_kit| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/for-arduino/products/arduino-robot-arm-kit" target="_blank">Purchase Link for Rollarm</a>
+
+.. |link_Rollarm| raw:: html
+
+    <a href="https://www.sunfounder.com/collections/for-arduino/products/arduino-robot-arm-kit" target="_blank">Rollarm</a>
+
 """
